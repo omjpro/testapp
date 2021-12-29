@@ -4,5 +4,12 @@
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="main_title">title here</string>
     <string name="question">question Description</string>
+    <string name="selection1">1.first option</string>
+    <string name="selection2">2.second option</string>
+    <string name="selection3">3.third option</string>
+    <string name="selection4">4.fourth option</string>
+    <string name="result_title">show the result here</string>
+    
+
 
 </resources>
