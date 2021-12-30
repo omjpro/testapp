@@ -1,6 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:id="@+id/nav_graph">
-
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainFragment">
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.lovetest.fragment.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_QFragment2"
+            app:destination="@id/QFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/QFragment2"
+        android:name="com.example.lovetest.fragment.QFragment"
+        android:label="fragment_q"
+        tools:layout="@layout/fragment_q" >
+        <action
+            android:id="@+id/action_QFragment2_to_SFragment"
+            app:destination="@id/SFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/SFragment"
+        android:name="com.example.lovetest.fragment.SFragment"
+        android:label="fragment_s"
+        tools:layout="@layout/fragment_s" >
+        <action
+            android:id="@+id/action_SFragment_to_RFragment"
+            app:destination="@id/RFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/RFragment"
+        android:name="com.example.lovetest.fragment.RFragment"
+        android:label="fragment_r"
+        tools:layout="@layout/fragment_r" />
 </navigation>
